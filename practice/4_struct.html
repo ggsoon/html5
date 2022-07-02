@@ -27,6 +27,15 @@
         li.select {
             float: left;
         }
+        input[type="password"] {
+            background: seagreen;
+        }
+        article h2,h3 {
+            background-color: darkgrey;
+        } 
+        article  > #abcd > h2,h3 {
+            background-color: crimson;
+        }
         * { color: red;}
     </style>
 </head>
@@ -60,8 +69,19 @@
         <article>
             <h1>h1 tag : block</h1>
             <p>p tag : block</p>
+          
             <a href="#">a tag : inline</a>
             <i>i tag: inline</i>
+        </article>
+        <article>         
+                <h2>pp h2</h2>
+            <div id = "abcd">
+                <h2>pp h2</h2>
+                <h3>pp h3</h3>
+            </div>
+        </article>
+        <article>
+            <input type="password">
         </article>
     </section>
     <footer>

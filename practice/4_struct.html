@@ -5,6 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h1, div {
+            color: aquamarine;
+            background-color: darkblue;
+        }
+        footer {
+            width: 500px; margin: 500px;
+                  float: right ;
+                }
+        #wrap {
+                width: 200px; margin: auto;
+        }
+        .select {
+            width: 100px; margin: auto;
+            background-color: chartreuse;
+        }
+        .on {
+            float: right;
+        }
+        li.select {
+            float: left;
+        }
+        * { color: red;}
+    </style>
 </head>
 <body>
     <header>
@@ -15,10 +39,16 @@
             <li><a href="#">하이퍼링크 네비게이션</a></li>
             <li><a href="#">메뉴 - 1</a></li>
             <li><a href="#">메뉴 - 2</a></li>
+            <li class="select">메뉴 선택</li>
         </ul>
     </nav>
     <section>
         <article>
+            <div id="wrap"><h1>#wrap id 선택자</h1></div>
+            <div class="select"><i>select .class 선택자</i></div>
+            <div class="select on"><i>select, on .class 선택자</i></div>
+        </article>
+            <article>
             <div>div tag : block</div>
             <div>div tag : block2</div><br>
             <span>span tag : inline</span>

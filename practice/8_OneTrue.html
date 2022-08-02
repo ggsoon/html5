@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One True Layout</title>
     <style>
-        body {
-            width: 500px;
-            margin: 10px auto;
-        }
+
         #top { background: greenyellow; }
         #middle { overflow: hidden; background: wheat;}
         #left { float: left; width: 150px; background: red; }
         #right { float: right; width: 350px; background: skyblue; } 
         #bottom { background: plum; }
+        .CenterAlignment {
+            margin: 0 auto;
+            width: 960px;
+        }
     </style>
 </head>
 <body>
@@ -23,6 +24,7 @@
     <div id="middle">middlemiddlemiddle</div> 
         <div id="left">leftleftleft</div> 
         <div id="right">rightrightright</div> 
-    <div id="bottom">bottombottombottom</div> 
+    <div id="bottom">bottombottombottom</div>
+    <h1 class="CenterAlignment">중앙정렬 레이아웃은 width가 있고 margin이 0 auto</h1> 
 </body>
 </html>
